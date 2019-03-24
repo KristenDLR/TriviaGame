@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trivia Game</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Tajawal" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div id="startDiv">
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <h1>Time Left: <span id="time"></span></h1>
+          <button id="start">Start</button>
+        </div>
+      </div>
+      <br><br>
+
+      <div id="questionDiv">
+        <div class="row">
+          <div class="col-md-3">
+              <iframe id=manateePhoto src="https://giphy.com/embed/l2QZO2paKHdxWwr1m" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+          </div>
+          <div class="col-md-9">
+          <!-- <div id="question1"> -->
+            <p>The Manatee!</p>
+            <input type="radio" name="q1" value="A1">  The name "manatee" is believed to be derived from the Carib word manati, which means "breast." Manatees belong to the order Sirenia, which comes from the Latin syreni, meaning "mermaid."<br><br>
+            <input type="radio" name="q1" value="B1">  A manatee closest relative is the elephant and they can grow as long as 12 feet and can weigh nearly 4,000 pounds!<br><br>
+            <input type="radio" name="q1" value="C1">  Manatees typically swim too deep to be threatened by recreational boat traffic there, there have been a handful of cases where manatees have been injured by collisions with hulls and propellers.<br><br>
+          <!-- </div> -->
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="photo col-md-3">
+            <iframe id=flamethrowerPhoto src="https://giphy.com/embed/S10KyI67Ak8Ug" width="480" height="257" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+          </div>
+          <div class="col-md-9">
+            <p>Flamethrowers!</p>
+            <input type="radio" name="q2" value="A2">Boston mayor, James Curley asked MIT engineers to find a way of melting city streets to avoid flooding during heavy snow, his suggestion was incorporating flamethrowers.<br><br>
+            <input type="radio" name="q2" value="B2">A Detroit inventor Charl Fourie created a hood-mounted flamethrower for cars, intended for “self-defense”, but was prevented from making them due to a federal law that says personal flamethrowers are illegal.<br><br>
+            <input type="radio" name="q2" value="C2">The modern flamethrower was invented in the early twentieth century, but massive tubed flamethrowers were used as early as 424 B.C., and the Byzantine navy had brass-tubed flamethrowers mounted on their ships by 672 AD.<br><br>
+          </div>
+        </div>
+
+        <div class="row">
+          <button id="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="row" id="resultDiv">
+    <div class="col-md-4 offset-md-4">
+        <iframe src="https://giphy.com/embed/8JW82ndaYfmNoYAekM" width="280" height="160" frameBorder="0"></iframe>
+      <h3>Right Answer: <span id="ra">0</span></h3>
+      <h3>Wrong Answer: <span id="wa">0</span></h3>
+      <h3>Unanswer: <span id="ua">0</span></h3>
+      <button id="reset">Reset</button>
+    </div>
+  </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./assets/javascript/app.js"></script>
+
+</body>
+<footer>Inspired by the book <u>Fact. Fact. Bullsh*t</u> by Neil Patrick Stewart</footer>
+
+</html>
