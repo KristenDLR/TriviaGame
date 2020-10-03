@@ -1,6 +1,30 @@
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
+ const questions ={
+ {
+  title : "",
+   choices: "",
+   answer: "",
+  },
+  {
+    title : "",
+     choices: "",
+     answer: "",
+    },
+ {
+    title : "",
+     choices: "",
+     answer: "",
+     }
+ };
+
+  let questionEl = document.querySelector("#questionDiv");
+  let optionListEl = document.querySelector("#option-list");
+  let questionResultEl = document.querySelector("#question-result");
+  let timerEl = document.querySelector("#timer");
+
+
   $('#resultDiv').hide();
   $('#questionDiv').hide();
   $('#done').hide();
