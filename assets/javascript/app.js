@@ -3,14 +3,14 @@
 // $(document).ready(function() {
  const questions ={
  {
-  title : "",
-   choices: "",
-   answer: "",
+  title : "The Manatees",
+   choices: ["The name 'manatee' is believed to be derived from the Carib word manati, which means 'breast.' Manatees belong to the order Sirenia, which comes from the Latin syreni, meaning 'mermaid.' ", "A manatee closest relative is the elephant and they can grow as long as 12 feet and can weigh nearly 4,000 pounds!", "Manatees typically swim too deep to be threatened by recreational boat traffic there, there have been a handful of cases where manatees have been injured by collisions with hulls and propellers."],
+   answer: "Manatees typically swim too deep to be threatened by recreational boat traffic there, there have been a handful of cases where manatees have been injured by collisions with hulls and propellers.",
   },
   {
-    title : "",
-     choices: "",
-     answer: "",
+    title : "Flamethrowers!",
+     choices: ["Boston mayor, James Curley asked MIT engineers to find a way of melting city streets to avoid flooding during heavy snow, his suggestion was incorporating flamethrowers.", "A Detroit inventor Charl Fourie created a hood-mounted flamethrower for cars, intended for “self-defense”, but was prevented from making them due to a federal law that says personal flamethrowers are illegal.", "The modern flamethrower was invented in the early twentieth century, but massive tubed flamethrowers were used as early as 424 B.C., and the Byzantine navy had brass-tubed flamethrowers mounted on their ships by 672 AD."],
+     answer: "A Detroit inventor Charl Fourie created a hood-mounted flamethrower for cars, intended for “self-defense”, but was prevented from making them due to a federal law that says personal flamethrowers are illegal.",
     },
  {
     title : "",
@@ -21,13 +21,33 @@
 
   let questionEl = document.querySelector("#questionDiv");
   let optionListEl = document.querySelector("#option-list");
+  let gifEL = document.querySelector("#question-result");
   let questionResultEl = document.querySelector("#question-result");
   let timerEl = document.querySelector("#timer");
 
+let questionIndex = 0;
+let correctCount = 0;
 
-  $('#resultDiv').hide();
-  $('#questionDiv').hide();
-  $('#done').hide();
+
+function renderQuestion(){
+  questionEl.textContent =questions[questionIndex].title];
+
+  optionListEl.innerHTML= "";
+
+  let choices = questions[questionIndex].choices;
+  let choicesLength = choices.length;
+
+  for (var i = 0; i < choicesLength; i ++){
+    let listQuestion = document.createElement("li");
+    listQuestion.textContent = choices[i];
+    optionListEl.append(listQuestion);
+  }
+
+
+
+  // $('#resultDiv').hide();
+  // $('#questionDiv').hide();
+  // $('#done').hide();
 //fix questionDiv to hide until onclick
 console.log("test1");
 var number = 60;
